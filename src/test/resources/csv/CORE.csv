@@ -1,0 +1,2 @@
+菜单(最小菜单),操作(区分操作哪些页面),标题(区分各个用例的侧重点),数据(value中包含:一定要加英文引号),是否使用(默认为TRUE，不用填FALSE)
+Dashboard,view,查看Dashboard项目{}（作为demo，不会用到）,{name1:value;name2:value2},

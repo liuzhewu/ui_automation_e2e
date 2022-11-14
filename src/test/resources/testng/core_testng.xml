@@ -1,0 +1,21 @@
+<!--此文件配置执行逻辑，环境默认为ali，在common.properties的DEFAULT_ENV-->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UiAutoTest">
+    <test name="CORE">
+        <classes>
+            <class name="com.liu.test.Before"/>
+            <class name="com.liu.test.Login"/>
+            <class name="com.liu.test.core.HomePage"/>
+            <class name="com.liu.test.core.Dashboard">
+                <methods>
+                    <include name="view"/>
+                </methods>
+            </class>
+            <class name="com.liu.test.After"/>
+        </classes>
+    </test>
+    <parameter name="module" value="CORE"/>
+    <listeners>
+        <listener class-name="com.liu.listener.CustomRetryListener"/>
+    </listeners>
+</suite>

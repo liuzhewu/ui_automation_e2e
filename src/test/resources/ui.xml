@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--此文件配置页面的元素信息-->
+<pages>
+    <page keyWord="常用定位">
+        <uiElement keyWord="N条/页" by="xpath" value="//div[text()='%PARAM0 条/页']"/>
+        <uiElement keyWord="分页下拉框_值" by="xpath" value="//li[text()='%PARAM0 条/页']"/>
+        <uiElement keyWord="下一页" by="xpath" value="//li[contains(@class,'ant-pagination-next')]"/>
+        <uiElement keyWord="分页第一页" by="xpath" value="//a[text()='1']"/>
+        <uiElement keyWord="span文本值定位" by="xpath" value="//span[text()='%PARAM0']"/>
+        <uiElement keyWord="span文本值定位元素父级" by="xpath" value="//span[text()='%PARAM0']/.."/>
+        <uiElement keyWord="div文本值定位" by="xpath" value="//div[text()='%PARAM0']"/>
+        <uiElement keyWord="div文本值定位元素父级" by="xpath" value="//div[text()='%PARAM0']/.."/>
+        <uiElement keyWord="td文本值定位" by="xpath" value="//td[text()='%PARAM0']"/>
+        <uiElement keyWord="a文本值定位" by="xpath" value="//a[text()='%PARAM0']"/>
+        <uiElement keyWord="li文本值定位" by="xpath" value="//li[text()='%PARAM0']"/>
+        <uiElement keyWord="label文本值定位" by="xpath" value="//label[text()='%PARAM0']"/>
+        <uiElement keyWord="p文本值定位" by="xpath" value="//p[text()='%PARAM0']"/>
+        <uiElement keyWord="提交按钮" by="xpath" value="//button[@class='ant-btn ant-btn-primary']"/>
+        <uiElement keyWord="表模式" by="xpath" value="//i[@rcicon='icontabletype']/../.."/>
+        <uiElement keyWord="卡片模式" by="xpath" value="//i[@rcicon='iconMenu']/../.."/>
+        <uiElement keyWord="富文本框" by="xpath" value="//textarea"/>
+        <uiElement keyWord="输入框提示信息" by="xpath" value="//input[@placeholder='%PARAM0']"/>
+        <uiElement keyWord="loading控件" by="xpath" value="//i[contains(@class,'ant-spin-dot')]"/>
+        <uiElement keyWord="骨架屏控件" by="xpath" value="//div[@class='ant-skeleton-content']"/>
+        <uiElement keyWord="card控件" by="xpath" value="//div[@class='ant-card-loading-block']"/>
+        <uiElement keyWord="切换状态" by="xpath" value="//button[@role='switch']"/>
+        <uiElement keyWord="属性的三点菜单" by="xpath" value="//a[contains(@class,'ant-dropdown-trigger')]"/>
+        <uiElement keyWord="列表的三点菜单" by="xpath" value="//span[contains(@class,'device-dropdown-link')]/i"/>
+    </page>
+    <page keyWord="公有页面">
+        <page keyWord="公有页面_登录页面">
+            <uiElement keyWord="Standard登录方式" by="xpath" value="//div[text()='Standard']"/>
+            <uiElement keyWord="用户名" by="xpath" value="//input[@formcontrolname='userAccount']"/>
+            <uiElement keyWord="密码" by="xpath" value="//input[@formcontrolname='userPasswd']"/>
+        </page>
+    </page>
+    <page keyWord="CORE"></page>
+    <page keyWord="CP"></page>
+
+
+</pages>
+
+

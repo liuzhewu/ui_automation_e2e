@@ -1,0 +1,17 @@
+<!--此文件配置执行逻辑，环境默认为ali，在common.properties的DEFAULT_ENV-->
+<!--此文件是配置端到端逻辑，用于各个模块之间的逻辑串联-->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UiAutoTest">
+    <test name="E2E">
+        <classes>
+            <class name="com.liu.test.Before"/>
+            <class name="com.liu.test.Login"/>
+            <class name="com.liu.test.e2e.Demo"/>
+            <class name="com.liu.test.After"/>
+        </classes>
+    </test>
+    <parameter name="module" value="E2E"/>
+    <listeners>
+        <listener class-name="com.liu.listener.CustomRetryListener"/>
+    </listeners>
+</suite>
